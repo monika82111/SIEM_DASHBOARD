@@ -1,0 +1,202 @@
+[
+  {
+    "timestamp": "2025-07-12T10:49:48",
+    "event_type": "FirewallBlocked",
+    "username": "bob",
+    "source_ip": "172.16.0.20",
+    "destination_ip": "192.168.1.10",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T00:58:48",
+    "event_type": "FirewallBlocked",
+    "username": "alice",
+    "source_ip": "203.0.113.1",
+    "destination_ip": "192.168.1.10",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T15:10:48",
+    "event_type": "LoginFailure",
+    "username": "david",
+    "source_ip": "192.168.1.15",
+    "destination_ip": "172.16.0.20",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T07:00:48",
+    "event_type": "FirewallBlocked",
+    "username": "david",
+    "source_ip": "192.168.1.15",
+    "destination_ip": "172.16.0.20",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T14:03:48",
+    "event_type": "FirewallBlocked",
+    "username": "alice",
+    "source_ip": "192.168.1.10",
+    "destination_ip": "192.168.1.15",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-14T07:29:48",
+    "event_type": "FirewallBlocked",
+    "username": "eve",
+    "source_ip": "203.0.113.1",
+    "destination_ip": "172.16.0.20",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T20:24:48",
+    "event_type": "SuspiciousProcess",
+    "username": "david",
+    "source_ip": "203.0.113.1",
+    "destination_ip": "172.16.0.20",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-14T03:38:48",
+    "event_type": "SuspiciousProcess",
+    "username": "eve",
+    "source_ip": "10.0.0.5",
+    "destination_ip": "203.0.113.1",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T01:07:48",
+    "event_type": "LoginSuccess",
+    "username": "alice",
+    "source_ip": "203.0.113.1",
+    "destination_ip": "172.16.0.20",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T20:07:48",
+    "event_type": "SuspiciousProcess",
+    "username": "david",
+    "source_ip": "172.16.0.20",
+    "destination_ip": "203.0.113.1",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T11:59:48",
+    "event_type": "LoginFailure",
+    "username": "charlie",
+    "source_ip": "10.0.0.5",
+    "destination_ip": "203.0.113.1",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T17:26:48",
+    "event_type": "MalwareDetected",
+    "username": "david",
+    "source_ip": "192.168.1.15",
+    "destination_ip": "10.0.0.5",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T19:25:48",
+    "event_type": "LoginSuccess",
+    "username": "bob",
+    "source_ip": "10.0.0.5",
+    "destination_ip": "203.0.113.1",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T18:32:48",
+    "event_type": "LoginSuccess",
+    "username": "charlie",
+    "source_ip": "192.168.1.15",
+    "destination_ip": "10.0.0.5",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-14T04:32:48",
+    "event_type": "DataExfiltration",
+    "username": "david",
+    "source_ip": "10.0.0.5",
+    "destination_ip": "10.0.0.5",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-14T03:09:48",
+    "event_type": "LoginFailure",
+    "username": "eve",
+    "source_ip": "192.168.1.10",
+    "destination_ip": "203.0.113.1",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T15:28:48",
+    "event_type": "LoginFailure",
+    "username": "alice",
+    "source_ip": "172.16.0.20",
+    "destination_ip": "203.0.113.1",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T15:48:48",
+    "event_type": "MalwareDetected",
+    "username": "eve",
+    "source_ip": "192.168.1.15",
+    "destination_ip": "192.168.1.15",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T09:32:48",
+    "event_type": "DataExfiltration",
+    "username": "alice",
+    "source_ip": "172.16.0.20",
+    "destination_ip": "172.16.0.20",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T11:21:48",
+    "event_type": "PortScan",
+    "username": "david",
+    "source_ip": "172.16.0.20",
+    "destination_ip": "192.168.1.10",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T10:30:48",
+    "event_type": "SuspiciousProcess",
+    "username": "david",
+    "source_ip": "192.168.1.10",
+    "destination_ip": "192.168.1.10",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T03:33:48",
+    "event_type": "DataExfiltration",
+    "username": "charlie",
+    "source_ip": "172.16.0.20",
+    "destination_ip": "192.168.1.10",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-14T03:41:48",
+    "event_type": "MalwareDetected",
+    "username": "alice",
+    "source_ip": "192.168.1.15",
+    "destination_ip": "203.0.113.1",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-12T11:56:48",
+    "event_type": "DataExfiltration",
+    "username": "bob",
+    "source_ip": "203.0.113.1",
+    "destination_ip": "192.168.1.15",
+    "details": "Synthetic log entry for simulation purposes."
+  },
+  {
+    "timestamp": "2025-07-13T08:30:48",
+    "event_type": "LoginFailure",
+    "username": "charlie",
+    "source_ip": "203.0.113.1",
+    "destination_ip": "10.0.0.5",
+    "details": "Synthetic log entry for simulation purposes."
+  }
+]
