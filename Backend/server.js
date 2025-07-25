@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
+const fs = require("fs");
 require("dotenv").config();
 
 const app = express();
@@ -21,7 +22,7 @@ mongoose
     }
   )
   .then(() => console.log("✅ MongoDB connected"))
-  .catch((err) => console.error("❌ MongoDB connection error:", err));;
+  .catch((err) => console.error("❌ MongoDB connection error:", err));
 
 // Log Schema
 const logSchema = new mongoose.Schema({
@@ -34,6 +35,24 @@ const logSchema = new mongoose.Schema({
 });
 
 const Log = mongoose.model("Log", logSchema);
+
+// ---- Auto-seed from siem_logs.json if DB is empty ----
+mongoose.connection.once("open", async () => {
+  const count = await Log.countDocuments();
+  if (count === 0) {
+    try {
+      const logsData = JSON.parse(
+        fs.readFileSync(path.join(__dirname, "siem_logs.json"), "utf8")
+      );
+      await Log.insertMany(logsData);
+      console.log(
+        `✅ Database seeded with ${logsData.length} logs from siem_logs.json`
+      );
+    } catch (error) {
+      console.error("❌ Error seeding database:", error);
+    }
+  }
+});
 
 // API Routes
 
