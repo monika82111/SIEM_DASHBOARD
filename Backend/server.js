@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
@@ -138,6 +139,15 @@ app.get("/api/event-types", async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+// Serve React build in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../siem-dashboard/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../siem-dashboard/build/index.html"));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
